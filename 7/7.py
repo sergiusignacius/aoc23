@@ -2,15 +2,7 @@ from collections import Counter
 import functools
 
 card_rank = "AKQT98765432J"
-hand_names = {
-    7: "five of a kind",
-    6: "four of a kind",
-    5: "full house",
-    4: "three of a kind",
-    3: "two pairs",
-    2: "one pair",
-    1: "high card"
-}
+
 hand_types = {
     '[5]': 7,
     '[4, 1]': 6,
