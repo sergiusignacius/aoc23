@@ -17,7 +17,7 @@ def solve(input, red=12, green=13, blue=14):
     result = 0
     for g in games:
         possible = True
-        
+
         for turn in g:
             for (no, col) in turn:
                 no = int(no)
@@ -29,10 +29,9 @@ def solve(input, red=12, green=13, blue=14):
                     possible = False
         if possible:
             result += game_id
-            print("Game", game_id)
 
         game_id += 1
-    
+
     return result
 
 def solve2(input):
@@ -48,4 +47,5 @@ def solve2(input):
             power *= m
         result.append(power)
     return sum(result)
+
 print(solve2("input.txt"))
